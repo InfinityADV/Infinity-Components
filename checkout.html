@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="product.html" class="logo">
+        <img
+          src="images/logomare.png"
+          alt="Infinity Components"
+          width="80"
+          height="80"
+        />
+      </a>
+
+      <nav class="nav">
+        <a href="#">Acasa</a>
+        <a href="#">Magazin</a>
+        <a href="#">Despre</a>
+        <a href="#">Contact</a>
+        <a href="#" class="sale">Oferte!</a>
+      </nav>
+
+      <div class="header-actions">
+        <input type="text" placeholder="Cauta" />
+
+        <a href="checkout.html" class="cart-icon">🛒</a>
+        <a href="login.html" class="user-icon">👤</a>
+
+        <!-- meniu hamburger telefon -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <h1>Checkout</h1>
+    <div class="breadcrumb">Acasa <span>&gt;</span> Checkout</div>
+
+    <!-- meniu telefon bootstrap -->
+    <div class="collapse mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <a href="product.html">Acasa</a>
+        <a href="#">Magazin</a>
+        <a href="#">Despre</a>
+        <a href="#">Contact</a>
+        <a href="#" class="sale">Oferte!</a>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="livrare">
+        <div class="box">
+          <h2>Informatii Livrare</h2>
+
+          <div class="row">
+            <div class="field">
+              <label>Nume</label>
+              <input type="text" />
+            </div>
+            <div class="field">
+              <label>Prenume</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Adresa</label>
+            <input type="text" />
+          </div>
+
+          <div class="field">
+            <label>Scara, Bloc, etc.</label>
+            <input type="text" />
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label>Judet</label>
+              <select>
+                <option>Ialomita</option>
+                <option>Giurgiu</option>
+                <option>Prahova</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Oras</label>
+              <select>
+                <option>Bucuresti</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Cod Postal</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" />
+            <span>Salveaza informatiile de contact</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Informatii de plata</h2>
+
+          <div class="payment-methods">
+            <button class="active">PayPal</button>
+            <button>Cash</button>
+          </div>
+
+          <div class="field">
+            <label>Detinatorul Cardului</label>
+            <input type="text" />
+          </div>
+
+          <div class="field">
+            <label>Numarul Cardului</label>
+            <input type="number" />
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label>Luna</label>
+              <select>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Anul</label>
+              <select>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>CVC</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <button class="pay-btn">Plateste</button>
+        </div>
+      </div>
+
+      <div class="revcart">
+        <div class="box">
+          <h2>Revizuieste Cosul</h2>
+
+          <div class="cart-item">
+            <img src="images/placabaza.jpg" />
+            <div class="item-info">
+              <h4>Placa de baza ASUS ROG STRIX Z890-E GAMING</h4>
+              <span>Cantitate: 1</span>
+            </div>
+            <div class="item-actions">
+              <input type="number" class="qty" value="1" />
+              <span class="price">$400</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="images/memorieram.jpg" />
+            <div class="item-info">
+              <h4>Memorie RAM, Kingston, 5600 MHz, DDR5, 16 GB</h4>
+              <span>Cantitate: 1</span>
+            </div>
+            <div class="item-actions">
+              <input type="number" class="qty" value="1" />
+              <p class="price"><del>$300</del> $190</p>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="images/procesor.jpg" />
+            <div class="item-info">
+              <h4>Intel Core i7-14700k</h4>
+              <span>Cantitate: 1</span>
+            </div>
+            <div class="item-actions">
+              <input type="number" class="qty" value="1" />
+              <span class="price">$400</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="images/pasta.png" />
+            <div class="item-info">
+              <h4>Pasta termoconductoare Arctic Silver 5</h4>
+              <span>Cantitate: 1</span>
+            </div>
+            <div class="item-actions">
+              <input type="number" class="qty" value="1" />
+              <span class="price"><del>$40</del>$20</span>
+            </div>
+          </div>
+          <div class="promo-box">
+            <input type="text" id="promo-input" placeholder="Add promo code" />
+            <button id="apply-promo-btn" type="button">Apply</button>
+          </div>
+          <div class="total">Total: $1.010</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="promotii">
+        <h4><b>SHOP</b></h4>
+        <p>Placa Video</p>
+        <p>Procesor</p>
+        <p>Memorie RAM</p>
+      </div>
+
+      <div class="promotii2">
+        <h4><b>INFORMATII</b></h4>
+        <p>Despre</p>
+        <p>Politica de Confidentialitate</p>
+        <p>Livrare&Returnare</p>
+      </div>
+
+      <div class="promotii3">
+        <h4><b>RELATII CLIENTI</b></h4>
+        <p>Contact</p>
+        <p>Intrebari Frecvente</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="cart-popup" class="cart-popup">Suma curenta: $0</div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

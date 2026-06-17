@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Vezi toate produsele</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="product.html">
+  <img src="images/logomare.png" alt="link-logo" width="80px" height="80px">
+  </a>
+  <nav class="nav">
+    <a href="#">Acasa</a>
+    <a href="#">Magazin</a>
+    <a href="#">Despre</a>
+    <a href="#">Contact</a>
+    <a href="#" class="sale">Oferte!</a>
+  </nav>
+
+    <div class="header-actions">
+        <input type="text" placeholder="Cauta">
+        <a href="checkout.html" class="cart-icon">🛒</a>
+        <a href="login.html" class="user-icon">👤</a>
+    </div>
+</header>
+
+<main class="container">
+
+  <h1>Vezi toate produsele</h1>
+
+    <div class="breadcrumb">
+        Acasa <span>&gt;</span>Produse<span>&gt;</span> Vezi Tot
+    </div>
+
+  <div class="header-row">
+        <p>Afisaj 13-24 din 312 Produse</p>
+
+        <div class="sort">
+            Cautare dupa: Cel mai popular
+        </div>
+    </div>
+
+  <div class="content">
+
+    <aside class="filters">
+      <h3>Filtre</h3>
+
+      <div class="filter-group">
+        <h4>Brand</h4>
+        <label><input type="checkbox"> MSI</label>
+        <label><input type="checkbox"> Intel</label>
+        <label><input type="checkbox"> AMD</label>
+        <label><input type="checkbox"> Gigabyte</label>
+        <label><input type="checkbox"> Fury</label>
+      </div>
+
+      <div class="filter-group">
+        <h4>Categories</h4>
+        <label><input type="checkbox"> Procesoare</label>
+        <label><input type="checkbox"> Placa Video</label>
+        <label><input type="checkbox"> Placa De Baza</label>
+        <label><input type="checkbox"> Memorie RAM</label>
+        <label><input type="checkbox"> Carcasa PC</label>
+        <label><input type="checkbox"> Cooler Procesor</label>
+        <label><input type="checkbox"> Memorie SSD</label>
+      </div>
+
+      <button class="apply-btn">Aplica Filtrele</button>
+    </aside>
+
+    <section class="products">
+
+      <div class="product-card">
+        <img src="images/rtx.png" alt="">
+        <h4>Nvidia RTX 5090</h4>
+        <p class="price">$2750</p>
+        <button onclick="adaugaLaSuma(2750); location.href='checkout.html'">
+  Adauga in Cos
+</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/procesor.jpg" alt="" width="80px" height="80px">
+        <h4>Intel Core i7-14700k</h4>
+        <p class="price">$400</p>
+        <button onclick="adaugaLaSuma(400); location.href='checkout.html'">Adauga in Cos</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/placabaza.jpg" alt="">
+        <h4>Placa de baza ASUS ROG STRIX Z890-E GAMING</h4>
+        <p class="price">$400</p>
+        <button onclick="adaugaLaSuma(400); location.href='checkout.html'">Adauga in Cos</button>
+      </div>
+
+      <div class="product-card sale">
+        <span class="badge">REDUCERE</span>
+        <img src="images/memorieram.jpg" alt="">
+        <h4>Memorie RAM, Kingston, 5600 MHz, DDR5, 16 GB</h4>
+        <p class="price"><del>$300</del> $190</p>
+        <button onclick="adaugaLaSuma(190); location.href='checkout.html'">Adauga in Cos</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/carcasa.jpg" alt="">
+        <h4>Winter Coat</h4>
+        <p class="price">$105</p>
+        <button onclick="adaugaLaSuma(105); location.href='checkout.html'">Adauga in Cos</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ssd.png" alt="">
+        <h4>SSD Seagate Firecuda 530R 1TB</h4>
+        <p class="price">$150</p>
+        <button onclick="adaugaLaSuma(150); location.href='checkout.html'">Adauga in Cos</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/cooler.jpg" alt="">
+        <h4>Cooler procesor racire lichida ASUS ROG</h4>
+        <p class="price">$120</p>
+        <button onclick="adaugaLaSuma(120); location.href='checkout.html'">Adauga in Cos</button>
+      </div>
+
+      <div class="product-card sale">
+        <span class="badge">REDUCERE</span>
+        <img src="images/pasta.png" alt="">
+        <h4>Pasta termoconductoare Arctic Silver 5</h4>
+        <p class="price"><del>$40</del> $20</p>
+        <button onclick="adaugaLaSuma(20); location.href='checkout.html'">Adauga in Cos</button>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="pagination">
+    <a href="#">Back</a>
+    <a href="#">1</a>
+    <a href="#" class="active">2</a>
+    <a href="#">3</a>
+    <span>...</span>
+    <a href="#">10</a>
+    <a href="#">Next</a>
+  </div>
+
+</main>
+
+<section class="newsletter">
+    <h2>RAMAI LA CURENT CU CELE MAI BUNE OFERTE!</h2>
+    <input type="email" placeholder="Introdu adresa de email">
+    <button>Aboneaza-te pentru oferte!</button>
+</section>
+
+<footer class="footer">
+    <div class="promotii">
+        <h4>SHOP</h4>
+        <p>Placa Video</p>
+        <p>Procesor</p>
+        <p>Memorie RAM</p>
+    </div>
+
+    <div class="promotii2">
+        <h4>INFORMATII</h4>
+        <p>Despre</p>
+        <p>Politica de Confidentialitate</p>
+        <p>Livrare&Returnare</p>
+    </div>
+
+    <div class="promotii3">
+        <h4>RELATII CLIENTI</h4>
+        <p>Contact</p>
+        <p>Intrebari Frecvente</p>
+    </div>
+</footer>
+
+<div id="cart-popup" class="cart-popup">
+    Suma curenta: $0
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
